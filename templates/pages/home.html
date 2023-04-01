@@ -54,84 +54,58 @@
         </div>
       </div>
     </div>
-    <!-- Search box 3 start -->
-    <div class="search-box-4 sb-8">
-      <form action="#" method="">
-        <div class="form-group">
-          <input
-            type="text"
-            name="keyword"
-            placeholder="Search by name"
-            class="form-control"
-          />
-        </div>
-        <div class="form-group">
-          <select class="form-control search-fields" name="select-brand">
-            <option selected="true" disabled="disabled">Brand</option>
-            <option>Audi</option>
-            <option>BMW</option>
-            <option>Honda</option>
-            <option>Nissan</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select class="form-control search-fields" name="select-make">
-            <option selected="true" disabled="disabled">Model</option>
-            <option>BMW</option>
-            <option>Honda</option>
-            <option>Lamborghini Huracán</option>
-            <option>Sports Car</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select class="form-control search-fields" name="select-location">
-            <option selected="true" disabled="disabled">Location</option>
-            <option>United States</option>
-            <option>United Kingdom</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select class="form-control search-fields" name="select-year">
-            <option selected="true" disabled="disabled">Year</option>
-            <option>2016</option>
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select class="form-control search-fields" name="select-type">
-            <option selected="true" disabled="disabled">
-              Select Type Of Car
-            </option>
-            <option>Sedan</option>
-            <option>Sports</option>
-            <option>Hatchback</option>
-            <option>Pickup Truck</option>
-            <option>SUV</option>
-          </select>
-        </div>
-        <div class="range-slider clearfix">
-          <label>Price</label>
-          <div
-            data-min="0"
-            data-max="150000"
-            data-min-name="min_price"
-            data-max-name="max_price"
-            data-unit="USD"
-            class="range-slider-ui ui-slider"
-            aria-disabled="false"
-          ></div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-block button-theme btn-md">
-            <i class="fa fa-search"></i> Search
-          </button>
-        </div>
-      </form>
-    </div>
-    <!-- Search box 3 end -->
+        <!-- Search box 3 start -->
+        <div class="search-box-4 sb-8">
+          <form action="{% url 'search' %}" method="">
+              <div class="form-group">
+                  <input type="text" name="keyword" placeholder="Search by name" class="form-control">
+              </div>
+
+              <div class="form-group">
+                  <select class="form-control search-fields" name="model">
+                      <option selected="true" disabled="disabled">Model</option>
+                      {% for model in model_search %}
+                        <option value="{{model}}">{{model}}</option>
+                      {% endfor %}
+                  </select>
+              </div>
+              <div class="form-group">
+                  <select class="form-control search-fields" name="city">
+                      <option selected="true" disabled="disabled">Location</option>
+                      {% for city in city_search %}
+                        <option value="{{city}}">{{city}}</option>
+                      {% endfor %}
+                  </select>
+              </div>
+              <div class="form-group">
+                  <select class="form-control search-fields" name="year">
+                      <option selected="true" disabled="disabled">Year</option>
+                      {% for year in year_search %}
+                        <option value="{{year}}">{{year}}</option>
+                      {% endfor %}
+                  </select>
+              </div>
+              <div class="form-group">
+                  <select class="form-control search-fields" name="body_style">
+                      <option selected="true" disabled="disabled">Select Type Of Car</option>
+                      {% for body_style in body_style_search %}
+                        <option value="{{body_style}}">{{body_style}}</option>
+                      {% endfor %}
+                  </select>
+              </div>
+              <div class="range-slider clearfix">
+                              <label>Price</label>
+                              <div data-min="0" data-max="50000000"  data-min-name="min_price" data-max-name="max_price" data-unit="INR" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                              <div class="clearfix"></div>
+                          </div>
+              <div class="form-group">
+                  <button class="btn btn-block button-theme btn-md">
+                      <i class="fa fa-search"></i> Search
+                  </button>
+              </div>
+          </form>
+      </div>
+      <!-- Search box 3 end -->
     <a
       class="carousel-control-prev none-580"
       href="#carouselExampleIndicators"
@@ -184,25 +158,36 @@
               </a>
               <div class="carbox-overlap-wrapper">
                 <div class="overlap-box">
-                  <div class="overlap-btns-area">
-                    <div class="car-magnify-gallery">
-                      <a href="{{ car.car_photo_1.url }}" class="overlap-btn""
-                        <i class="fa fa-expand"></i>
-                        <img class="hidden" src="img/car/car-1.jpg" />
-                      </a>
-                      <a href="{{ car.car_photo_2.url }}" class="hidden">
-                        <img class="hidden" src="img/car/car-2.jpg" />
-                      </a>
-                      <a href="{{ car.car_photo_3.url }}" class="hidden">
-                        <img class="hidden" src="img/car/car-3.jpg" />
-                      </a>
-                      <a href="{{ car.car_photo_4.url }}" class="hidden">
-                        <img class="hidden" src="img/car/car-4.jpg" />
-                      </a>
+                    <div class="overlap-btns-area">
+                        <div class="car-magnify-gallery">
+                            <a href="{{car.car_photo.url}}" class="overlap-btn">
+                                <i class="fa fa-expand"></i>
+                                <img class="hidden" src="{{car.car_photo.url}}">
+                            </a>
+                            {% if car.car_photo_1 %}
+                            <a href="{{car.car_photo_1.url}}" class="hidden">
+                                <img class="hidden" src="{{car.car_photo_1.url}}">
+                            </a>
+                            {% endif %}
+                            {% if car.car_photo_2 %}
+                            <a href="{{car.car_photo_2.url}}" class="hidden">
+                                <img class="hidden" src="{{car.car_photo_2.url}}">
+                            </a>
+                            {% endif %}
+                            {% if car.car_photo_3 %}
+                            <a href="{{car.car_photo_3.url}}" class="hidden">
+                                <img class="hidden" src="{{car.car_photo_3.url}}">
+                            </a>
+                            {% endif %}
+                            {% if car.car_photo_4 %}
+                            <a href="{{car.car_photo_4.url}}" class="hidden">
+                                <img class="hidden" src="{{car.car_photo_4.url}}">
+                            </a>
+                            {% endif %}
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
             </div>
             <div class="detail">
               <h1 class="title">
@@ -382,6 +367,8 @@
   </div>
 </div>
 <!-- Intro section end -->
+
+
 
 <!-- Car Overview Modal -->
 <div class="car-model-2">
