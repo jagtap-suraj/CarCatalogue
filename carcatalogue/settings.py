@@ -27,10 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'contacts.apps.ContactsConfig',
     'accounts.apps.AccountsConfig',
     'cars.apps.CarsConfig',
     'pages.apps.PagesConfig',
@@ -45,11 +47,11 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
+    # 'allauth.socialaccount',
 
-    #providers
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
+    # #providers
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -151,3 +153,10 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+# Email Settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = '#####'
+EMAIL_HOST_PASSWORD = '#####'
+EMAIL_USE_TLS = True

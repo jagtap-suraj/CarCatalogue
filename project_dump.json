@@ -1,0 +1,398 @@
+[
+{
+    "model": "contacts.contact",
+    "pk": 1,
+    "fields": {
+        "first_name": "Tuco",
+        "last_name": "Salamanca",
+        "car_id": 3,
+        "customer_need": "I'd like to test drive this",
+        "car_title": "2017 Ford F-250 Super Duty",
+        "city": "Lavasa",
+        "state": "Maharashtra",
+        "email": "tuco@cartel.com",
+        "phone": "1234567890",
+        "message": "I like doing business with a family man. There’s always a lot of collateral.",
+        "user_id": 2,
+        "create_date": "2023-04-10T00:08:39.921"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 3,
+    "fields": {
+        "first_name": "Tuco",
+        "last_name": "Salamanca",
+        "car_id": 5,
+        "customer_need": "I'm interested in this",
+        "car_title": "2018 Toyota 4Runner",
+        "city": "Lavasa",
+        "state": "Maharashtra",
+        "email": "tuco@cartel.com",
+        "phone": "01234567890",
+        "message": "Blue, Yellow, Pink. Whatever, Man. Just Keep Bringing Me That.",
+        "user_id": 2,
+        "create_date": "2023-04-10T00:39:06.403"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 4,
+    "fields": {
+        "first_name": "test",
+        "last_name": "test",
+        "car_id": 1,
+        "customer_need": "I'm interested in this",
+        "car_title": "2017 Ferrari 488 GTB",
+        "city": "test",
+        "state": "test",
+        "email": "test@test.com",
+        "phone": "1234567890",
+        "message": "test",
+        "user_id": 1,
+        "create_date": "2023-04-10T00:45:58.495"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+        "car_title": "2017 Ferrari 488 GTB",
+        "state": "MH",
+        "city": "Mumbai",
+        "color": "White",
+        "model": "488 GTB",
+        "year": 2017,
+        "condition": "Used",
+        "price": 45000000,
+        "description": "<p>The&nbsp;<strong>Ferrari 488</strong>&nbsp;(Type F142M) is a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Rear_mid-engine,_rear-wheel_drive_layout\" title=\"Rear mid-engine, rear-wheel drive layout\">mid-engine</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Sports_car\" title=\"Sports car\">sports car</a>&nbsp;produced by the Italian automobile manufacturer&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari\" title=\"Ferrari\">Ferrari</a>. The car replaced the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_458\" title=\"Ferrari 458\">458</a>, being the first mid-engine Ferrari to use a turbocharged V8 since the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F40\" title=\"Ferrari F40\">F40</a>. It was succeeded by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F8\" title=\"Ferrari F8\">Ferrari F8</a>.</p>\r\n\r\n<p>The car is powered by a 3.9-litre&nbsp;<a href=\"https://en.wikipedia.org/wiki/Twin-turbocharged\" title=\"Twin-turbocharged\">twin-turbocharged</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/V8_engine\" title=\"V8 engine\">V8 engine</a>, smaller in displacement but generating a higher power output than the 458&#39;s&nbsp;<a href=\"https://en.wikipedia.org/wiki/Naturally_aspirated_engine\" title=\"Naturally aspirated engine\">naturally aspirated engine</a>. The 488 GTB was named &quot;The Supercar of the Year 2015&quot; by car magazine&nbsp;<em><a href=\"https://en.wikipedia.org/wiki/Top_Gear_(magazine)\" title=\"Top Gear (magazine)\">Top Gear</a></em>, as well as becoming&nbsp;<em><a href=\"https://en.wikipedia.org/wiki/Motor_Trend\" title=\"Motor Trend\">Motor Trend</a></em>&#39;s 2017 &quot;Best Driver&#39;s Car&quot;.<a href=\"https://en.wikipedia.org/wiki/Ferrari_488#cite_note-7\">[7]</a>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Jeremy_Clarkson\" title=\"\">Jeremy Clarkson</a>&nbsp;announced the 488 Pista as his 2019 Supercar of the Year.<a href=\"https://en.wikipedia.org/wiki/Ferrari_488#cite_note-8\">[8]</a>&nbsp;The 488 was succeeded by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ferrari_F8\" title=\"Ferrari F8\">F8 Tributo</a>&nbsp;in February 2019.</p>",
+        "car_photo": "photos/2023/04/01/1902536891.jpg",
+        "car_photo_1": "photos/2023/04/01/1902536917.jpg",
+        "car_photo_2": "photos/2023/04/01/1902537043.jpg",
+        "car_photo_3": "photos/2023/04/01/1902537077.jpg",
+        "car_photo_4": "photos/2023/04/01/1902537082.jpg",
+        "features": "Cruise Control,Airbags,Air Conditioning,Seat Heating,Alarm System,Power Steering,Reversing Camera",
+        "body_style": "Coupe",
+        "engine": "3.9L V8",
+        "transmission": "7-speed automatic",
+        "interior": "Alcantara",
+        "miles": 10000,
+        "doors": "2",
+        "passengers": 2,
+        "vin_no": "ABC123DEF456GHI78",
+        "milage": 8,
+        "fuel_type": "Petrol",
+        "no_of_owners": "1",
+        "is_featured": true,
+        "created_date": "2023-03-31T18:42:35"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "car_title": "2017 Ford Edge",
+        "state": "DL",
+        "city": "Delhi",
+        "color": "Black",
+        "model": "Edge",
+        "year": 2017,
+        "condition": "Used",
+        "price": 2700000,
+        "description": "<p>The&nbsp;<strong>Ford Edge</strong>&nbsp;is a range of&nbsp;<a href=\"https://en.wikipedia.org/wiki/Crossover_(automobile)\" title=\"Crossover (automobile)\">crossover SUVs</a>&nbsp;manufactured by the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Motor_Company\" title=\"Ford Motor Company\">Ford Motor Company</a>. Introduced for the 2017 model year, the Edge is the first&nbsp;<a href=\"https://en.wikipedia.org/wiki/Mid-size_CUV\" title=\"Mid-size CUV\">mid-size CUV</a>&nbsp;marketed by Ford in North America; the model line is currently in its second generation. Deriving its name from a trim package of the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Ranger_(Americas)\" title=\"Ford Ranger (Americas)\">Ford Ranger</a>, the Ford Edge is positioned between the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Escape\" title=\"Ford Escape\">Ford Escape</a>&nbsp;and the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Explorer\" title=\"Ford Explorer\">Ford Explorer</a>&nbsp;within the Ford product line.</p>\r\n\r\n<p>Sharing its underpinnings with the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_Fusion_(Americas)\" title=\"Ford Fusion (Americas)\">Ford Fusion sedan</a>, Ford has also produced the model line as the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Lincoln_MKX\" title=\"Lincoln MKX\">Lincoln MKX</a>&nbsp;(since 2019, the Lincoln Nautilus). The second generation is also marketed by&nbsp;<a href=\"https://en.wikipedia.org/wiki/Ford_of_Europe\" title=\"Ford of Europe\">Ford of Europe</a>, positioned between the Kuga (Escape) and the Explorer PHEV.</p>",
+        "car_photo": "photos/2023/04/01/1901478607.jpg",
+        "car_photo_1": "photos/2023/04/01/1901478618.jpg",
+        "car_photo_2": "photos/2023/04/01/1901478646.jpg",
+        "car_photo_3": "photos/2023/04/01/1901478672.jpg",
+        "car_photo_4": "photos/2023/04/01/1901478687.jpg",
+        "features": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,Alarm System,ParkAssist,Power Steering,Reversing Camera,Bluetooth Handset",
+        "body_style": "SUV",
+        "engine": "2.0L V6",
+        "transmission": "6-speed automatic",
+        "interior": "Cloth",
+        "miles": 25000,
+        "doors": "4",
+        "passengers": 5,
+        "vin_no": "ABC123DEF456GHI79",
+        "milage": 10,
+        "fuel_type": "Petrol",
+        "no_of_owners": "2",
+        "is_featured": false,
+        "created_date": "2023-04-01T18:55:44"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "car_title": "2017 Ford F-250 Super Duty",
+        "state": "GA",
+        "city": "Panaji",
+        "color": "Black",
+        "model": "F-250 Super Duty",
+        "year": 2017,
+        "condition": "Used",
+        "price": 7500000,
+        "description": "<p>In the world of three-quarter ton heavy duty trucks buyers prioritize towing capability, passing power, long range between highway fill-ups, ground clearance, interior comfort and exterior styling that telegraphs toughness. The F-250 Super Duty delivers on all counts, and even in areas where it is not best in class, it is solidly competitive.</p>\r\n\r\n<p>Chevrolet and GMC may beat it in a couple of measurements in the cabin and the Ram has one of the flashiest interiors in any truck, but the F-250 delivers the goods in towing and hauling, with up to 20,000 pounds of towing brawn and 4,260 pounds of payload capacity.</p>",
+        "car_photo": "photos/2023/04/01/1894300894.jpg",
+        "car_photo_1": "photos/2023/04/01/1894300905.jpg",
+        "car_photo_2": "photos/2023/04/01/1894300920.jpg",
+        "car_photo_3": "photos/2023/04/01/1900155012.jpg",
+        "car_photo_4": "photos/2023/04/01/1900155133.jpg",
+        "features": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,Alarm System,Reversing Camera,Direct Fuel Injection,Bluetooth Handset",
+        "body_style": "Pickup Truck",
+        "engine": "6.7L V8",
+        "transmission": "6-speed automatic",
+        "interior": "Leather",
+        "miles": 15000,
+        "doors": "4",
+        "passengers": 6,
+        "vin_no": "ABC123DEF456GHI80",
+        "milage": 6,
+        "fuel_type": "Petrol",
+        "no_of_owners": "3",
+        "is_featured": true,
+        "created_date": "2023-04-01T19:06:56"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+        "car_title": "2017 Jaguar F-PACE",
+        "state": "KA",
+        "city": "Bangalore",
+        "color": "Green",
+        "model": "F-PACE",
+        "year": 2017,
+        "condition": "Used",
+        "price": 6000000,
+        "description": "<p>Jaguar&rsquo;s F-Pace sparked some pushback at its 2017 debut, with some still questioning whether upper-crust car brands should be making SUVs at all&mdash;a fussy attitude that now seems dated considering carmakers from Aston Martin to Lamborghini are hawking SUVs. Naturally, the F-Pace immediately became Jaguar&rsquo;s best-selling model, and spawned more SUVs in the smaller E-Pace and electric I-Pace.</p>\r\n\r\n<p>Built alongside&nbsp;<a href=\"https://www.forbes.com/wheels/cars/land-rover/\" rel=\"noopener\" target=\"_blank\" title=\"Land Rover\">Land Rover</a>&nbsp;models in Solihull, U.K., the compact SUV remains an underdog in sales, versus luxury suburban mainstays like the Mercedes-Benz GLC, BMW X3 and&nbsp;<a href=\"https://www.forbes.com/wheels/cars/audi/\" rel=\"noopener\" target=\"_blank\" title=\"Audi\">Audi</a>&nbsp;Q5. But for people who prioritize high style and high speed, the&nbsp;<a href=\"https://www.forbes.com/wheels/cars/jaguar/\" rel=\"noopener\" target=\"_blank\" title=\"Jaguar\">Jaguar</a>&nbsp;is an often-overlooked choice. The F-Pace is one of the sportiest-driving SUVs in today&rsquo;s showrooms with handling that easily rivals the&nbsp;<a href=\"https://www.forbes.com/wheels/cars/porsche/\" rel=\"noopener\" target=\"_blank\" title=\"Porsche\">Porsche</a>&nbsp;Macan or Alfa Romeo Stelvio.</p>",
+        "car_photo": "photos/2023/04/01/1902932503.jpg",
+        "car_photo_1": "photos/2023/04/01/1902932514.jpg",
+        "car_photo_2": "photos/2023/04/01/1902932528.jpg",
+        "car_photo_3": "photos/2023/04/01/1902932542.jpg",
+        "car_photo_4": "photos/2023/04/01/3cb8d24f05f16b018d93de1a75e7ada0.jpg",
+        "features": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,Alarm System,ParkAssist,Power Steering,Reversing Camera,Bluetooth Handset",
+        "body_style": "SUV",
+        "engine": "3.0L V6",
+        "transmission": "8-speed automatic",
+        "interior": "Leather",
+        "miles": 20000,
+        "doors": "5",
+        "passengers": 5,
+        "vin_no": "ABC123DEF456GHI81",
+        "milage": 14,
+        "fuel_type": "Petrol",
+        "no_of_owners": "2",
+        "is_featured": false,
+        "created_date": "2023-04-01T19:22:26"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+        "car_title": "2018 Toyota 4Runner",
+        "state": "KL",
+        "city": "Thiruvananthapuram",
+        "color": "Silver",
+        "model": "4Runner",
+        "year": 2018,
+        "condition": "Used",
+        "price": 4000000,
+        "description": "<p>The Toyota 4Runner is an SUV in the traditional sense, with a body-on-frame construction and a solid rear axle like a pickup truck. It is one of the last SUVs built this way, giving it the rugged capability that made this type of vehicle attractive in the first place.&nbsp;While serviceable as a daily driver, the 4Runner is home on adverse terrain. Off-road prowess comes from its high ground clearance and available hardware such as a locking rear differential, low-range gearing and Toyota&#39;s trick Kinetic Dynamic Suspension System (KDSS). The latter consists of special stabilizer bars that automatically adjust to allow for greater wheel travel (and therefore traction) in off-road driving situations.</p>",
+        "car_photo": "photos/2023/04/01/1893633875.jpg",
+        "car_photo_1": "photos/2023/04/01/1893633879.jpg",
+        "car_photo_2": "photos/2023/04/01/1893633884.jpg",
+        "car_photo_3": "photos/2023/04/01/1896836883.jpg",
+        "car_photo_4": "photos/2023/04/01/1896836887.jpg",
+        "features": "Cruise Control,Airbags,Seat Heating,Alarm System,Power Steering,Reversing Camera,Bluetooth Handset",
+        "body_style": "SUV",
+        "engine": "4.0L V6",
+        "transmission": "5-speed automatic",
+        "interior": "Synthetic Leather",
+        "miles": 60000,
+        "doors": "5",
+        "passengers": 9,
+        "vin_no": "ABC123DEF456GHI82",
+        "milage": 9,
+        "fuel_type": "Diesel",
+        "no_of_owners": "4",
+        "is_featured": true,
+        "created_date": "2023-04-01T19:28:59"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+        "car_title": "2018 Toyota Corolla",
+        "state": "GJ",
+        "city": "Surat",
+        "color": "White",
+        "model": "Corolla",
+        "year": 2018,
+        "condition": "Used",
+        "price": 500000,
+        "description": "<p>With a low price tag and history of solid reliability, it&#39;s easy to see why the Toyota Corolla has become one of the world&#39;s best-selling vehicles over the last 50-plus years. The 2018 Toyota Corolla builds upon the success of its ancestors with expressive styling, a surprisingly roomy cabin, plenty of advanced safety features and comfortable, supportive seats. But while the Corolla covers the basics well enough, a few deficiencies make its rivals better picks overall.</p>",
+        "car_photo": "photos/2023/04/01/1900893299.jpg",
+        "car_photo_1": "photos/2023/04/01/1900893311.jpg",
+        "car_photo_2": "photos/2023/04/01/1900893319.jpg",
+        "car_photo_3": "photos/2023/04/01/1900893329.jpg",
+        "car_photo_4": "photos/2023/04/01/1900893391.jpg",
+        "features": "Audio Interface,Airbags,Air Conditioning,Alarm System,Power Steering,Bluetooth Handset",
+        "body_style": "SUV",
+        "engine": "2.0L V6",
+        "transmission": "3-speed automatic",
+        "interior": "Cloth",
+        "miles": 9000,
+        "doors": "5",
+        "passengers": 6,
+        "vin_no": "ABC123DEF456GHI83",
+        "milage": 20,
+        "fuel_type": "Gasoline",
+        "no_of_owners": "3",
+        "is_featured": false,
+        "created_date": "2023-04-01T00:59:02"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 5,
+    "fields": {
+        "first_name": "Walter",
+        "last_name": "White",
+        "designation": "Business Development Manager",
+        "photo": "photos/2023/03/27/walter_JTQ7TJe.jpg",
+        "facebook_link": "https://facebook.com",
+        "twitter_link": "https://twitter.com",
+        "google_plus_link": "https://google.com",
+        "created_date": "2023-03-27T16:46:29.744"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 6,
+    "fields": {
+        "first_name": "Jesse",
+        "last_name": "Pinkman",
+        "designation": "Sales Manager",
+        "photo": "photos/2023/03/27/Jesse_U5X6I2y.jpg",
+        "facebook_link": "https://facebook.com",
+        "twitter_link": "https://twitter.com",
+        "google_plus_link": "https://google.com",
+        "created_date": "2023-03-27T16:46:41.470"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 7,
+    "fields": {
+        "first_name": "Mike",
+        "last_name": "Ehrmantraut",
+        "designation": "Operations Manager",
+        "photo": "photos/2023/03/27/Mike_GnrnDB5.jpg",
+        "facebook_link": "https://facebook.com",
+        "twitter_link": "https://twitter.com",
+        "google_plus_link": "https://google.com",
+        "created_date": "2023-03-27T16:47:01.767"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 8,
+    "fields": {
+        "first_name": "Gustavo",
+        "last_name": "Fring",
+        "designation": "Customer Service Manager",
+        "photo": "photos/2023/03/27/Gus_fhesQj1.jpg",
+        "facebook_link": "https://facebook.com",
+        "twitter_link": "https://twitter.com",
+        "google_plus_link": "https://google.com",
+        "created_date": "2023-03-27T16:47:22.176"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 9,
+    "fields": {
+        "first_name": "Saul",
+        "last_name": "Goodman",
+        "designation": "Legal Advisor",
+        "photo": "photos/2023/03/27/Saul_kEzfyw0.jpg",
+        "facebook_link": "",
+        "twitter_link": "https://twitter.com",
+        "google_plus_link": "https://google.com",
+        "created_date": "2023-03-27T17:47:14.786"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$YHYraBCXlRdnvyfB9eYt97$eBSw8bm9XdyaNFomrjd4jCWXx6rKLfTVQLuSi4/OkTU=",
+        "last_login": "2023-04-10T00:45:19.992",
+        "is_superuser": true,
+        "username": "djangoadmin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-03-27T15:22:55.462",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$Vq7dVA09KosCeDp5SARPoy$9NP+UoMHFN23MsL3lByTi9ZUafEzo9UpS6n8eW0Pdns=",
+        "last_login": "2023-04-10T00:56:37.679",
+        "is_superuser": false,
+        "username": "crystalking",
+        "first_name": "Tuco",
+        "last_name": "Salamanca",
+        "email": "tuco@cartel.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-04-01T13:08:05.729",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0dv6xp15lmwj68rgqrs7nrgyt3105vs4",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pDOSMFx6d4zEGAGqRpISrsy3l2bdKHb_977L-XDuhS_dpn9xOqsUB1-txjSQ-oG-B7qrenU6jJPUW-K3mnX18byvOzu30EJvXxroRxFjgaYRspkh5NlDEwGCRMODCNZBgfJWYuSIjozYAai0TADgXp_AN0gNyo:1plaP0:5sUuhOOEtesrTZUerjicrd9bzdwbHfpWjeSv1_SQ4DE",
+        "expire_date": "2023-04-24T00:38:38.303"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "a0waan7bx0y8odmrpacl3x70b5ezu2fk",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sImRRcTBVeU8xRDF4MiJdfQ:1piWxi:5u3rUZABUM9tCqRextmrMwZFE_qmwvPAPwKW-H8JLdI",
+        "expire_date": "2023-04-15T14:21:50.071"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lid5ssmhyv9ry1g92zsvxw3ce5pfdt35",
+    "fields": {
+        "session_data": ".eJxVjLEOwjAMRP8lM4raKA41IzvfEDm2QwoolZp2Qvw7rdQBdNu9d_c2kdalxLXpHEcxF9Ob02-XiJ9adyAPqvfJ8lSXeUx2V-xBm71Noq_r4f4dFGplW6u4oJ2e0avL7LcAAwXEjDSERJ5JQ-8BcvIOJCAoM-UuE6MMyObzBQp_OTs:1plaVT:swNW1jmlP60Xg0crfJ5MSMYvuCxMzKqAOFc-8xEIWLY",
+        "expire_date": "2023-04-24T00:45:19.996"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "localhost:8000",
+        "name": "localhost:8000"
+    }
+}
+]
