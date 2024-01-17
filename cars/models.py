@@ -74,6 +74,20 @@ class Car(models.Model):
         ('6', '6'),
     )
 
+    seat_choices = (
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+        ('5', '5'),
+        ('6', '6'),
+        ('7', '7'),
+        ('8', '8'),
+        ('9', '9'),
+        ('10', '10'),
+        ('11', '11'),
+        ('12', '12'),
+    )
+
     car_title = models.CharField(max_length=255)
     state = models.CharField(choices=state_choice, max_length=100)
     city = models.CharField(max_length=100)
@@ -95,6 +109,7 @@ class Car(models.Model):
     interior = models.CharField(max_length=100)
     miles = models.IntegerField()
     doors = models.CharField(choices=door_choices, max_length=10)
+    seats = models.CharField(choices=seat_choices, max_length=10, default=4)
     passengers = models.IntegerField()
     vin_no = models.CharField(max_length=100)
     milage = models.IntegerField()

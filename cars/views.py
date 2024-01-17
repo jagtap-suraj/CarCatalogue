@@ -14,6 +14,12 @@ def cars(request):
     city_search = Car.objects.values_list('city', flat=True).distinct()
     year_search = Car.objects.values_list('year', flat=True).distinct()
     body_style_search = Car.objects.values_list('body_style', flat=True).distinct()
+    fuel_type_search = Car.objects.values_list('fuel_type', flat=True).distinct()
+    milage_search = Car.objects.values_list('milage', flat=True).distinct().order_by('milage')
+    doors_search = Car.objects.values_list('doors', flat=True).distinct().order_by('doors')
+    seats_search = Car.objects.values_list('seats', flat=True).distinct().order_by('seats')
+    interior_search = Car.objects.values_list('interior', flat=True).distinct()
+    condition_search = Car.objects.values_list('condition', flat=True).distinct()
 
     data = {
         'cars': paged_cars,
@@ -21,6 +27,12 @@ def cars(request):
         'city_search': city_search,
         'year_search': year_search,
         'body_style_search': body_style_search,
+        'fuel_type_search': fuel_type_search,
+        'milage_search': milage_search,
+        'doors_search': doors_search,
+        'seats_search': seats_search,
+        'interior_search': interior_search,
+        'condition_search': condition_search,
     }
     return render(request, 'cars/cars.html', data)
 
@@ -40,6 +52,7 @@ def search(request):
     city_search = Car.objects.values_list('city', flat=True).distinct()
     year_search = Car.objects.values_list('year', flat=True).distinct()
     body_style_search = Car.objects.values_list('body_style', flat=True).distinct()
+    fuel_type_search = Car.objects.values_list('fuel_type', flat=True).distinct()
     transmission_search = Car.objects.values_list('transmission', flat=True).distinct()
 
     if 'keyword' in request.GET:
@@ -66,6 +79,11 @@ def search(request):
         body_style = request.GET['body_style']
         if body_style:
             cars = cars.filter(body_style__iexact=body_style)
+    
+    if 'fuel_type' in request.GET:
+        fuel_type = request.GET['fuel_type']
+        if fuel_type:
+            cars = cars.filter(fuel_type__iexact=fuel_type)
 
     if 'min_price' in request.GET:
         min_price = request.GET['min_price']
@@ -79,6 +97,7 @@ def search(request):
         'city_search': city_search,
         'year_search': year_search,
         'body_style_search': body_style_search,
+        'fuel_type_search': fuel_type_search,
         'transmission_search': transmission_search,
     }
 

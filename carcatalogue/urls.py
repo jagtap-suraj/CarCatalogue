@@ -21,9 +21,15 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),
+    path('cars/', include('cars.urls')),
     path('cars', include('cars.urls')),
     path('accounts', include('accounts.urls')),
     path('contacts', include('contacts.urls')),
     # path('services', include('services.urls')),
     # path('socialaccounts', include('allauth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# add at the last
+# urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+

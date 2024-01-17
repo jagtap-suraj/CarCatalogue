@@ -4,6 +4,7 @@
 {% block content %}
 
 {% load humanize %}
+{% load static %}
 
 <!-- Sub banner start -->
 <div class="sub-banner overview-bgi">
@@ -86,6 +87,7 @@
                                     <li>{{car.body_style}}</li>
                                     <li>{{car.color}}</li>
                                     <li>{{car.year}}</li>
+                                    <li>{{car.seats}} Seater</li>
                                 </ul>
                             </div>
                         </div>
@@ -167,12 +169,60 @@
                             </div>
                             <div class="form-group">
                                 <select class="form-control search-fields" name="body_style">
-                                    <option selected="true" disabled="disabled">Select Type Of Car</option>
+                                    <option selected="true" disabled="disabled">Car Type</option>
                                     {% for body_style in body_style_search %}
                                       <option value="{{body_style}}">{{body_style}}</option>
                                     {% endfor %}
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <select class="form-control search-fields" name="fuel_type">
+                                    <option selected="true" disabled="disabled">Fuel Type</option>
+                                    {% for fuel_type in fuel_type_search %}
+                                      <option value="{{fuel_type}}">{{fuel_type}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control search-fields" name="milage">
+                                    <option selected="true" disabled="disabled">Milage</option>
+                                    {% for milage in milage_search %}
+                                      <option value="{{mileage}}">{{milage}}</option>
+                                    {% endfor %}
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control search-fields" name="doors">
+                                    <option selected="true" disabled="disabled">No. of Doors</option>
+                                    {% for doors in doors_search %}
+                                      <option value="{{doors}}">{{doors}}</option>
+                                    {% endfor %}
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control search-fields" name="seats">
+                                    <option selected="true" disabled="disabled">No. of Seats</option>
+                                    {% for seats in seats_search %}
+                                      <option value="{{seats}}">{{seats}}</option>
+                                    {% endfor %}
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control search-fields" name="interior">
+                                    <option selected="true" disabled="disabled">Interior Type</option>
+                                    {% for interior in interior_search %}
+                                      <option value="{{interior}}">{{interior}}</option>
+                                    {% endfor %}
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control search-fields" name="condition">
+                                    <option selected="true" disabled="disabled">Condition</option>
+                                    {% for condition in condition_search %}
+                                      <option value="{{condition}}">{{condition}}</option>
+                                    {% endfor %}
+                                </select>
+                              </div>
                             <div class="range-slider clearfix">
                                             <label>Price</label>
                                             <div data-min="0" data-max="50000000"  data-min-name="min_price" data-max-name="max_price" data-unit="INR" class="range-slider-ui ui-slider" aria-disabled="false"></div>
@@ -187,7 +237,7 @@
                     </div>
                    
                     <!-- Question start -->
-                    <div class="widget question widget-3">
+                    <!-- <div class="widget question widget-3">
                         <h5 class="sidebar-title">Follow us</h5>
                         <div class="social-list clearfix">
                             <ul>
@@ -198,7 +248,7 @@
                                 <li><a href="#https://www.linkedin.com" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

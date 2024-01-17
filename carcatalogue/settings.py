@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +27,7 @@ SECRET_KEY = '7@^cdsb09=p4rbdomsn8qxr!5s^bm)ypq3ga4uw@hx3$ia!2=5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -88,15 +90,18 @@ WSGI_APPLICATION = 'carcatalogue.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carcatalogue_db',
-        'USER': 'postgres',
-        'PASSWORD': 'postGreSQL@#2023',
-        'HOST': 'localhost',
+        'NAME': os.environ.get("DB_NAME"),
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASSWORD"),
+        'HOST': os.environ.get("DB_HOST"),
     }
 }
+
 
 
 # Password validation

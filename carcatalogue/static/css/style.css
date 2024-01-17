@@ -5889,8 +5889,8 @@ footer {
 }
 
 .range-slider {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: -10px;
+    /* margin-bottom: 30px; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -6046,24 +6046,27 @@ footer {
     padding: 25px 25px 10px;
     max-width: 400px!important;
     width: 100%;
-    top: 25%;
+    top: 22%;
     right: 10%;
     z-index: 1;
     background: #fff;
     border-radius: 10px;
+    padding-right: 9px;
 }
 
 .search-box-4 .search-fields {
-    min-height: 40px;
+    min-height: 20px;
+    margin: -10px;
     padding: 0;
     border-radius: 3px;
     box-shadow: none;
     border: 1px solid #e0e0e0;
     background: #fff;
+    margin: -10px;
 }
 
 .search-box-4  .btn-md {
-    padding: 12px 30px 12px 30px;
+    padding: 1px 30px 1px 30px;
 }
 
 /** Sub Banner start **/
@@ -8591,7 +8594,7 @@ table {
 
     .search-box-3 .range-slider {
         margin-top: 5px;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
     }
 
     .search-box-3{

@@ -54,6 +54,16 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="fuel_type">
+                                    <option selected='selected' disabled='disabled'>Select Fuel Type</option>
+                                    {% for fuel_type in fuel_type_search %}
+                                      <option value="{{fuel_type}}">{{fuel_type}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
@@ -105,7 +115,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Here's your <span>Cars</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="row">
           {% for car in cars %}
